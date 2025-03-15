@@ -60,7 +60,7 @@ reset.onclick = () => {
     min = 0;
     hr = 0;
 
-    milisecond.textContent = '00'
+    milisecond.textContent = '000'
     second.textContent = '00'
     minute.textContent = '00'
     hour.textContent = '00'
