@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tektur", sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    background: url(../images/time.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.time{
+    max-width: 580px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 20px;
+}
+
+
+.time span{
+    display: inline-block;
+    width: 130px;
+    color: greenyellow;
+    font-size: 100px;
+    margin-top: 150px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.milisecond span{
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+.milisecond{
+    align-self: flex-end;
+}
+
+.hour span::after,
+.minute span::after {
+    content: ":";
+    position: absolute;
+    font-size: 100px;
+    top: -12px;
+    left: 127px;
+}
+
+
+.btns{
+    max-width: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+    margin-left: -40px;
+}
+
+.btns .stop, .btns .reset{
+    display: none;
+}
+
+.btns button{
+    border: none;
+    padding: 12px;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: yellowgreen;
+    transition: background-color linear 0.2s;
+}
+
+.btns button:hover{
+    background-color: rgb(126, 169, 41);
+}
+
+.btns button:active{
+    background-color: rgb(88, 118, 29);
+}
+
+    
